@@ -62,7 +62,7 @@
 							style="
 								background: linear-gradient(#101010, #101010);
 								background-color: #101010;
-								color: #eaeaea;
+								color: #ffffff;
 							"
 						>
 							<div
@@ -104,12 +104,12 @@
 				<!-- ============== BODY START ============== -->
 
 				<tr>
-					<td style="padding: 0 0 32px" align="center">
+					<td style="padding: 18px 10px 16px" align="center">
 						<div
 							style="
 								background: linear-gradient(#101010, #101010);
 								background-color: #101010;
-								color: #eaeaea;
+								color: #ffffff;
 							"
 						>
 							<div
@@ -117,20 +117,22 @@
 									background: linear-gradient(#101010, #101010);
 									background-color: #101010;
 									color: #ffffff;
+									width: 100%;
 								"
 							>
 								<a
-									href="{{course_url}}"
+									href="https://www.milesmasterclass.com/"
 									target="_blank"
 									style="
 										background: linear-gradient(#101010, #101010);
 										background-color: #101010;
 										color: #ffffff;
+										width: 100%;
 									"
 								>
 									<img
-										src="{{ course_thumbnail }}"
-										alt="Miles Masterclass Logo"
+										src="{{course_thumbnail}}"
+										alt="Miles Masterclass Subscription"
 										width="100%"
 										style="
 											display: block;
@@ -145,7 +147,6 @@
 						</div>
 					</td>
 				</tr>
-
 				<tr>
 					<td style="padding: 0 24px 32px">
 						<div
@@ -170,7 +171,17 @@
 										font-family: Open Sans, sans-serif;
 									"
 								>
-									3 MONTHS TO GO, LET’S LOCK IN YOUR CPE
+									YOU’RE OFFICIALLY CERTIFIED!
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									{{course_name}}
 								</p>
 								<p
 									style="
@@ -180,9 +191,52 @@
 										font: normal 14px / 18px Arial;
 									"
 								>
-									Heads-up: if the final isn’t passed by the expiry date, your
-									progress resets. The upside? You still have unlimited retakes
-									to clear the final and secure your credits.
+									Thank you for sharing your feedback, and congratulations on
+									successfully completing your course! You’ve earned your NASBA
+									CPE Certificate, and it’s time to claim it by subscribing.
+								</p>
+								<p
+									style="
+										margin: 24px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 16px / 20px Arial;
+									"
+								>
+									By subscribing, you’ll unlock:
+								</p>
+								<p
+									style="
+										margin: 10px 0 0 10px;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									1. NASBA-approved CPE Certificate – download and add it to
+									your professional profile, or submit it for compliance.
+								</p>
+								<p
+									style="
+										margin: 10px 0 0 10px;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									2. Credly Digital Badge – proudly share your verified
+									credential on LinkedIn.] - this line will come if course has a
+									separate credly badge attached to it
+								</p>
+								<p
+									style="
+										margin: 24px 0 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									Show the world you’re ready to lead with your expertise!
 								</p>
 							</div>
 						</div>
@@ -205,7 +259,7 @@
 								"
 							>
 								<a
-									href="{{ course_url }}"
+									href="https://www.milesmasterclass.com/accounting/plan"
 									target="_blank"
 									style="
 										background: linear-gradient(#101010, #101010);
@@ -220,61 +274,385 @@
 											background-color: #0a74de;
 											color: #ffffff;
 											font-family: Open Sans, sans-serif;
-											font: bold 16px / 20px Arial;
+											font: normal 16px / 20px Arial;
 											border-radius: 999px;
 											padding: 10px 20px;
 											border: 0;
 										"
 									>
-										Jump Back In
+										Subscribe Now - $999/year
 									</button>
 								</a>
 							</div>
 						</div>
 					</td>
 				</tr>
+				<!-- ============== MORE COURSES SECTION ============== -->
+				{% if course1 %}
+
+				<!-- Heading -->
 				<tr>
-					<td style="padding: 0 0 32px" align="center">
-						<div
-							style="
-								background: linear-gradient(#101010, #101010);
-								background-color: #101010;
-								color: #eaeaea;
-							"
-						>
-							<div
-								style="
-									background: linear-gradient(#101010, #101010);
-									background-color: #101010;
-									color: #ffffff;
-								"
-							>
-								<a
-									href="#"
-									target="_blank"
+					<td style="padding: 0 24px 18px">
+						<div class="blend-screen">
+							<div class="blend-difference">
+								<p
 									style="
-										background: linear-gradient(#101010, #101010);
-										background-color: #101010;
+										margin: 0;
 										color: #ffffff;
+										font: bold 28px / 32px Arial;
+										font-family: Open Sans, sans-serif;
+										text-align: center;
 									"
 								>
-									<img
-										src="https://d1pp0977rsxmiq.cloudfront.net/static-assests/masterclass-emailers/2020454342.png"
-										alt="Miles Masterclass Logo"
-										width="100%"
-										style="
-											display: block;
-											border: none;
-											background: linear-gradient(#101010, #101010);
-											background-color: #101010;
-											color: #ffffff;
-										"
-									/>
-								</a>
+									More Courses you’ll Love
+								</p>
 							</div>
 						</div>
 					</td>
 				</tr>
+
+				<!-- Cards -->
+				{% if course3 %}
+				<tr>
+					<td
+						style="
+							background: linear-gradient(#101010, #101010);
+							text-align: center;
+							background-color: #101010;
+							padding: 0 24px;
+						"
+					>
+						<table
+							role="presentation"
+							cellpadding="0"
+							cellspacing="0"
+							border="0"
+							width="100%"
+							align="center"
+							style="
+								margin: 0 auto;
+								border-collapse: separate;
+								background: linear-gradient(#101010, #101010);
+								background-color: #101010;
+							"
+						>
+							<tr>
+								<td align="center" style="width: 33%">
+									<div
+										style="
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #eaeaea;
+										"
+									>
+										<div
+											style="
+												background: linear-gradient(#101010, #101010);
+												background-color: #101010;
+												color: #ffffff;
+											"
+										>
+											<a
+												href="{{ course1.url }}"
+												target="_blank"
+												style="
+													background: linear-gradient(#101010, #101010);
+													background-color: #101010;
+													color: #ffffff;
+												"
+											>
+												<img
+													src="{{ course1.image }}"
+													alt="{{ course1.title }}"
+													width="100%"
+													style="
+														display: block;
+														border: none;
+														background: linear-gradient(#101010, #101010);
+														background-color: #101010;
+														color: #ffffff;
+													"
+												/>
+											</a>
+										</div>
+									</div>
+								</td>
+								<td align="center" style="width: 33%">
+									<div
+										style="
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #eaeaea;
+										"
+									>
+										<div
+											style="
+												background: linear-gradient(#101010, #101010);
+												background-color: #101010;
+												color: #ffffff;
+											"
+										>
+											<a
+												href="{{ course2.url }}"
+												target="_blank"
+												style="
+													background: linear-gradient(#101010, #101010);
+													background-color: #101010;
+													color: #ffffff;
+												"
+											>
+												<img
+													src="{{ course2.image }}"
+													alt="{{ course2.title }}"
+													width="100%"
+													style="
+														display: block;
+														border: none;
+														background: linear-gradient(#101010, #101010);
+														background-color: #101010;
+														color: #ffffff;
+													"
+												/>
+											</a>
+										</div>
+									</div>
+								</td>
+								<td align="center" style="width: 33%">
+									<div
+										style="
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #eaeaea;
+										"
+									>
+										<div
+											style="
+												background: linear-gradient(#101010, #101010);
+												background-color: #101010;
+												color: #ffffff;
+											"
+										>
+											<a
+												href="{{ course3.url }}"
+												target="_blank"
+												style="
+													background: linear-gradient(#101010, #101010);
+													background-color: #101010;
+													color: #ffffff;
+												"
+											>
+												<img
+													src="{{ course3.image }}"
+													alt="{{ course3.title }}"
+													width="100%"
+													style="
+														display: block;
+														border: none;
+														background: linear-gradient(#101010, #101010);
+														background-color: #101010;
+														color: #ffffff;
+													"
+												/>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				{% elif course2 %}
+				<tr>
+					<td
+						style="
+							text-align: center;
+							background-color: #101010;
+							padding: 0 24px;
+						"
+					>
+						<table
+							role="presentation"
+							cellpadding="0"
+							cellspacing="0"
+							border="0"
+							width="100%"
+							align="center"
+							style="margin: 0 auto; border-collapse: separate"
+						>
+							<tr>
+								<td align="center" style="width: 33%">
+									<div
+										style="
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #eaeaea;
+										"
+									>
+										<div
+											style="
+												background: linear-gradient(#101010, #101010);
+												background-color: #101010;
+												color: #ffffff;
+											"
+										>
+											<a
+												href="{{ course1.url }}"
+												target="_blank"
+												style="
+													background: linear-gradient(#101010, #101010);
+													background-color: #101010;
+													color: #ffffff;
+												"
+											>
+												<img
+													src="{{ course1.image }}"
+													alt="{{ course1.title }}"
+													width="100%"
+													style="
+														display: block;
+														border: none;
+														background: linear-gradient(#101010, #101010);
+														background-color: #101010;
+														color: #ffffff;
+													"
+												/>
+											</a>
+										</div>
+									</div>
+								</td>
+								<td align="center" style="width: 33%">
+									<div
+										style="
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #eaeaea;
+										"
+									>
+										<div
+											style="
+												background: linear-gradient(#101010, #101010);
+												background-color: #101010;
+												color: #ffffff;
+											"
+										>
+											<a
+												href="{{ course2.url }}"
+												target="_blank"
+												style="
+													background: linear-gradient(#101010, #101010);
+													background-color: #101010;
+													color: #ffffff;
+												"
+											>
+												<img
+													src="{{ course2.image }}"
+													alt="{{ course2.title }}"
+													width="100%"
+													style="
+														display: block;
+														border: none;
+														background: linear-gradient(#101010, #101010);
+														background-color: #101010;
+														color: #ffffff;
+													"
+												/>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				{% else %}
+				<tr>
+					<td
+						style="
+							text-align: center;
+							background-color: #101010;
+							padding: 0 24px;
+						"
+					>
+						<table
+							role="presentation"
+							cellpadding="0"
+							cellspacing="0"
+							border="0"
+							width="100%"
+							align="center"
+							style="margin: 0 auto; border-collapse: separate"
+						>
+							<tr>
+								<td align="center" style="width: 33%">
+									<div
+										style="
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #eaeaea;
+										"
+									>
+										<div
+											style="
+												background: linear-gradient(#101010, #101010);
+												background-color: #101010;
+												color: #ffffff;
+											"
+										>
+											<a
+												href="{{ course1.url }}"
+												target="_blank"
+												style="
+													background: linear-gradient(#101010, #101010);
+													background-color: #101010;
+													color: #ffffff;
+												"
+											>
+												<img
+													src="{{ course1.image }}"
+													alt="{{ course1.title }}"
+													width="100%"
+													style="
+														display: block;
+														border: none;
+														background: linear-gradient(#101010, #101010);
+														background-color: #101010;
+														color: #ffffff;
+													"
+												/>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				{% endif %}
+
+				<tr>
+					<td style="padding: 32px 24px">
+						<div class="blend-screen">
+							<div class="blend-difference">
+								<p
+									style="
+										margin: 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+										text-align: center;
+									"
+								>
+									Every course brings a new perspective. Keep exploring, keep
+									earning, and keep mastering the AI in accounting.
+								</p>
+							</div>
+						</div>
+					</td>
+				</tr>
+				{% endif %}
+				<!-- ============== MORE COURSES SECTION END ============== -->
 
 				<!-- ============== BODY END ============== -->
 
@@ -344,7 +722,7 @@
 								"
 							>
 								<a
-									href="https://apps.apple.com/in/accounting/miles-masterclass/id6736642042"
+									href="https://apps.apple.com/in/app/miles-masterclass-ai-cpe/id6736642042"
 									target="_blank"
 									style="text-decoration: none; text-align: center"
 								>

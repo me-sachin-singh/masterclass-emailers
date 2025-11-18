@@ -28,7 +28,7 @@
 			a,
 			button {
 				text-decoration: none;
-				cursor: pointer;
+				cursor: pointer !important;
 			}
 		</style>
 	</head>
@@ -120,7 +120,7 @@
 								"
 							>
 								<a
-									href="{{course_url}}"
+									href="{{course_redirect_url}}"
 									target="_blank"
 									style="
 										background: linear-gradient(#101010, #101010);
@@ -130,7 +130,7 @@
 								>
 									<img
 										src="{{ course_thumbnail }}"
-										alt="Miles Masterclass Logo"
+										alt="Miles Masterclass Course Thumbnail"
 										width="100%"
 										style="
 											display: block;
@@ -145,7 +145,6 @@
 						</div>
 					</td>
 				</tr>
-
 				<tr>
 					<td style="padding: 0 24px 32px">
 						<div
@@ -168,9 +167,10 @@
 										color: #ffffff;
 										font: bold 24px / 28px Arial uppercase;
 										font-family: Open Sans, sans-serif;
+										text-transform: uppercase;
 									"
 								>
-									3 MONTHS TO GO, LET’S LOCK IN YOUR CPE
+									Your {{month}} Learning Wrap is here!
 								</p>
 								<p
 									style="
@@ -180,9 +180,230 @@
 										font: normal 14px / 18px Arial;
 									"
 								>
-									Heads-up: if the final isn’t passed by the expiry date, your
-									progress resets. The upside? You still have unlimited retakes
-									to clear the final and secure your credits.
+									Another month of learning, growing, and levelling up! Let’s
+									take a quick look at your {{month}} Miles Masterclass Wrap
+								</p>
+								<p
+									style="
+										margin: 24px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: bold 18px / 22px Arial;
+									"
+								>
+									Your Learning Stats
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									1. Masterclasses Started: [insert no of courses launched that
+									month]
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									2. Podcasts Started: [insert no of courses launched that
+									month]
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									3. Reels Started: [insert no of courses launched that month]
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									4. CPE Credits Earned: [insert no of credits earned that
+									month]
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									5. Total Minutes Learned: [insert total minutes learned
+									masterclass+podcast+reels]
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									6. CAIRA Progress: [insert %]
+								</p>
+								<p
+									style="
+										margin: 24px 0 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									Every minute you spent learning brought you closer to mastery
+									— and we’re cheering you on for what’s next!
+								</p>
+								<p
+									style="
+										margin: 32px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 18px / 22px Arial;
+									"
+								>
+									What Learners Loved This Month
+								</p>
+								<p
+									style="
+										margin: 24px 0 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									Looking for your next favorite? Here’s what everyone’s been
+									talking about
+								</p>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+				<!-- =============== CHAPTER 1 START =============== -->
+				<tr>
+					<td style="padding: 0 24px 32px">
+						<div
+							style="
+								background-color: #101010;
+								color: #ffffff;
+								mix-blend-mode: screen;
+							"
+						>
+							<div
+								style="
+									background-color: #101010;
+									color: #ffffff;
+									mix-blend-mode: difference;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										color: #ffffff;
+										font: bold 18px / 22px Arial;
+										font-family: Open Sans, sans-serif;
+									"
+								>
+									Most-Loved Masterclass
+								</p>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 0 24px" align="center">
+						<div
+							style="
+								background: linear-gradient(#101010, #101010);
+								background-color: #101010;
+								color: #eaeaea;
+							"
+						>
+							<div
+								style="
+									background: linear-gradient(#101010, #101010);
+									background-color: #101010;
+									color: #ffffff;
+								"
+							>
+								<a
+									href="{{course_redirect_url}}"
+									target="_blank"
+									style="
+										background: linear-gradient(#101010, #101010);
+										background-color: #101010;
+										color: #ffffff;
+									"
+								>
+									<img
+										src="{{ chapter1.image }}"
+										alt="Miles Masterclass Course Thumbnail"
+										width="100%"
+										style="
+											display: block;
+											border: none;
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #ffffff;
+											border-radius: 8px;
+											overflow: hidden;
+										"
+									/>
+								</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 0 24px 32px">
+						<div
+							style="
+								background-color: #101010;
+								color: #ffffff;
+								mix-blend-mode: screen;
+							"
+						>
+							<div
+								style="
+									background-color: #101010;
+									color: #ffffff;
+									mix-blend-mode: difference;
+								"
+							>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 18px / 22px Arial;
+									"
+								>
+									{{chapter1.title}}
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									{{ chapter1.description}}
 								</p>
 							</div>
 						</div>
@@ -205,7 +426,7 @@
 								"
 							>
 								<a
-									href="{{ course_url }}"
+									href="{{ course_redirect_url }}"
 									target="_blank"
 									style="
 										background: linear-gradient(#101010, #101010);
@@ -216,8 +437,8 @@
 									<button
 										style="
 											cursor: pointer;
-											background: linear-gradient(#0a74de, #0a74de);
-											background-color: #0a74de;
+											background: linear-gradient(#0065e3, #0065e3);
+											background-color: #0065e3;
 											color: #ffffff;
 											font-family: Open Sans, sans-serif;
 											font: bold 16px / 20px Arial;
@@ -226,15 +447,48 @@
 											border: 0;
 										"
 									>
-										Jump Back In
+										Watch Now
 									</button>
 								</a>
 							</div>
 						</div>
 					</td>
 				</tr>
+
+				<!-- =============== CHAPTER 1 END =============== -->
+				<!-- =============== CHAPTER 2 START =============== -->
 				<tr>
-					<td style="padding: 0 0 32px" align="center">
+					<td style="padding: 0 24px 32px">
+						<div
+							style="
+								background-color: #101010;
+								color: #ffffff;
+								mix-blend-mode: screen;
+							"
+						>
+							<div
+								style="
+									background-color: #101010;
+									color: #ffffff;
+									mix-blend-mode: difference;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										color: #ffffff;
+										font: bold 18px / 22px Arial;
+										font-family: Open Sans, sans-serif;
+									"
+								>
+									Top Podcast Episode
+								</p>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 0 24px" align="center">
 						<div
 							style="
 								background: linear-gradient(#101010, #101010);
@@ -250,7 +504,7 @@
 								"
 							>
 								<a
-									href="#"
+									href="{{course_redirect_url}}"
 									target="_blank"
 									style="
 										background: linear-gradient(#101010, #101010);
@@ -259,8 +513,8 @@
 									"
 								>
 									<img
-										src="https://d1pp0977rsxmiq.cloudfront.net/static-assests/masterclass-emailers/2020454342.png"
-										alt="Miles Masterclass Logo"
+										src="{{ chapter2.image }}"
+										alt="Miles Masterclass Course Thumbnail"
 										width="100%"
 										style="
 											display: block;
@@ -268,9 +522,293 @@
 											background: linear-gradient(#101010, #101010);
 											background-color: #101010;
 											color: #ffffff;
+											border-radius: 8px;
+											overflow: hidden;
 										"
 									/>
 								</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 0 24px 32px">
+						<div
+							style="
+								background-color: #101010;
+								color: #ffffff;
+								mix-blend-mode: screen;
+							"
+						>
+							<div
+								style="
+									background-color: #101010;
+									color: #ffffff;
+									mix-blend-mode: difference;
+								"
+							>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 18px / 22px Arial;
+									"
+								>
+									{{chapter2.title}}
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									{{ chapter2.description}}
+								</p>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 0 24px 32px">
+						<div
+							style="
+								background: linear-gradient(#101010, #101010);
+								background-color: #101010;
+								color: #ffffff;
+							"
+						>
+							<div
+								style="
+									background: linear-gradient(#101010, #101010);
+									background-color: #101010;
+									color: #ffffff;
+								"
+							>
+								<a
+									href="{{ course_redirect_url }}"
+									target="_blank"
+									style="
+										background: linear-gradient(#101010, #101010);
+										background-color: #101010;
+										color: #ffffff;
+									"
+								>
+									<button
+										style="
+											cursor: pointer;
+											background: linear-gradient(#0065e3, #0065e3);
+											background-color: #0065e3;
+											color: #ffffff;
+											font-family: Open Sans, sans-serif;
+											font: bold 16px / 20px Arial;
+											border-radius: 999px;
+											padding: 10px 20px;
+											border: 0;
+										"
+									>
+										Hear Now
+									</button>
+								</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+				<!-- =============== CHAPTER 2 END =============== -->
+				<!-- =============== CHAPTER 3 START =============== -->
+				<tr>
+					<td style="padding: 0 24px 32px">
+						<div
+							style="
+								background-color: #101010;
+								color: #ffffff;
+								mix-blend-mode: screen;
+							"
+						>
+							<div
+								style="
+									background-color: #101010;
+									color: #ffffff;
+									mix-blend-mode: difference;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										color: #ffffff;
+										font: bold 18px / 22px Arial;
+										font-family: Open Sans, sans-serif;
+									"
+								>
+									Most Watched Reels
+								</p>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 0 24px" align="center">
+						<div
+							style="
+								background: linear-gradient(#101010, #101010);
+								background-color: #101010;
+								color: #eaeaea;
+							"
+						>
+							<div
+								style="
+									background: linear-gradient(#101010, #101010);
+									background-color: #101010;
+									color: #ffffff;
+								"
+							>
+								<a
+									href="{{course_redirect_url}}"
+									target="_blank"
+									style="
+										background: linear-gradient(#101010, #101010);
+										background-color: #101010;
+										color: #ffffff;
+									"
+								>
+									<img
+										src="{{ chapter3.image }}"
+										alt="Miles Masterclass Course Thumbnail"
+										width="100%"
+										style="
+											display: block;
+											border: none;
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #ffffff;
+											border-radius: 8px;
+											overflow: hidden;
+										"
+									/>
+								</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 0 24px 32px">
+						<div
+							style="
+								background-color: #101010;
+								color: #ffffff;
+								mix-blend-mode: screen;
+							"
+						>
+							<div
+								style="
+									background-color: #101010;
+									color: #ffffff;
+									mix-blend-mode: difference;
+								"
+							>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 18px / 22px Arial;
+									"
+								>
+									{{chapter3.title}}
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									{{ chapter3.description}}
+								</p>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 0 24px 32px">
+						<div
+							style="
+								background: linear-gradient(#101010, #101010);
+								background-color: #101010;
+								color: #ffffff;
+							"
+						>
+							<div
+								style="
+									background: linear-gradient(#101010, #101010);
+									background-color: #101010;
+									color: #ffffff;
+								"
+							>
+								<a
+									href="{{ course_redirect_url }}"
+									target="_blank"
+									style="
+										background: linear-gradient(#101010, #101010);
+										background-color: #101010;
+										color: #ffffff;
+									"
+								>
+									<button
+										style="
+											cursor: pointer;
+											background: linear-gradient(#0065e3, #0065e3);
+											background-color: #0065e3;
+											color: #ffffff;
+											font-family: Open Sans, sans-serif;
+											font: bold 16px / 20px Arial;
+											border-radius: 999px;
+											padding: 10px 20px;
+											border: 0;
+										"
+									>
+										Watch Now
+									</button>
+								</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+				<!-- =============== CHAPTER 3 END =============== -->
+
+				<tr>
+					<td style="padding: 0 24px 32px">
+						<div
+							style="
+								background-color: #101010;
+								color: #ffffff;
+								mix-blend-mode: screen;
+							"
+						>
+							<div
+								style="
+									background-color: #101010;
+									color: #ffffff;
+									mix-blend-mode: difference;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										color: #b2b2b2;
+										font: normal 14px / 18px Arial;
+										font-family: Open Sans, sans-serif;
+									"
+								>
+									Your learning journey is yours to shape — one binge, stream,
+									or scroll at a time. Here’s to another month of progress,
+									purpose, and personal growth
+								</p>
 							</div>
 						</div>
 					</td>
@@ -302,13 +840,15 @@
 							>
 								<div
 									style="
-										width: 90%;
-										height: 1px;
+										width: 100%;
+										height: 2px;
 										margin: 10px auto;
-										background: linear-gradient(#767676, #767676);
-										background-color: #767676;
-										border-radius: 999px;
-										border: none;
+										background: linear-gradient(
+											90deg,
+											rgba(255, 255, 255, 0.01) 0%,
+											#ffffff 49.47%,
+											rgba(255, 255, 255, 0.01) 100%
+										);
 									"
 								></div>
 							</div>
@@ -396,12 +936,12 @@
 										font: normal 12px / 16px Arial;
 									"
 								>
-									Miles Masterclass Inc. (Sponsor ID:149174) is registered with
-									the National Association of State Boards of Accountancy
-									(NASBA) as a sponsor of continuing professional education on
-									the National Registry of CPE Sponsors. State boards of
-									accountancy have final authority on the acceptance of
-									individual courses for CPE credit. Complaints regarding
+									Miles Education Private Limited (Sponsor ID:149174) is
+									registered with the National Association of State Boards of
+									Accountancy (NASBA) as a sponsor of continuing professional
+									education on the National Registry of CPE Sponsors. State
+									boards of accountancy have final authority on the acceptance
+									of individual courses for CPE credit. Complaints regarding
 									registered sponsors may be submitted to the National Registry
 									of CPE Sponsors through its website:
 									<a
@@ -416,7 +956,7 @@
 					</td>
 				</tr>
 				<tr align="center">
-					<td style="padding: 0 24px 12px" align="center">
+					<td style="padding: 0 24px 0" align="center">
 						<div
 							style="
 								background: linear-gradient(#101010, #101010);
@@ -450,7 +990,7 @@
 					</td>
 				</tr>
 				<tr align="center">
-					<td style="padding: 0 24px 12px" align="center">
+					<td style="padding: 0 24px 32px" align="center">
 						<div
 							style="
 								background: linear-gradient(#101010, #101010);
@@ -470,12 +1010,14 @@
 								<div
 									style="
 										width: 150px;
-										height: 1px;
+										height: 2px;
 										margin: 10px auto;
-										background: linear-gradient(#767676, #767676);
-										background-color: #767676;
-										border-radius: 999px;
-										border: none;
+										background: linear-gradient(
+											90deg,
+											rgba(255, 255, 255, 0.01) 0%,
+											#ffffff 49.47%,
+											rgba(255, 255, 255, 0.01) 100%
+										);
 									"
 								></div>
 							</div>
@@ -518,13 +1060,7 @@
 										src="https://d1pp0977rsxmiq.cloudfront.net/static-assests/masterclass-emailers/linked.png"
 										alt="Welcome to Miles Masterclass"
 										width="24px"
-										style="
-											display: block;
-											border: none;
-											padding: 6px;
-											background: transparent;
-											background: linear-gradient(transparent, transparent);
-										"
+										style="display: block; border: none; padding: 6px"
 									/>
 								</a>
 								<a
@@ -546,13 +1082,7 @@
 										src="https://d1pp0977rsxmiq.cloudfront.net/static-assests/masterclass-emailers/youtube.png"
 										alt="Welcome to Miles Masterclass"
 										width="24px"
-										style="
-											display: block;
-											border: none;
-											padding: 6px;
-											background: transparent;
-											background: linear-gradient(transparent, transparent);
-										"
+										style="display: block; border: none; padding: 6px"
 									/>
 								</a>
 								<a
@@ -574,13 +1104,7 @@
 										src="https://d1pp0977rsxmiq.cloudfront.net/static-assests/masterclass-emailers/instagram.png"
 										alt="Welcome to Miles Masterclass"
 										width="24px"
-										style="
-											display: block;
-											border: none;
-											padding: 6px;
-											background: transparent;
-											background: linear-gradient(transparent, transparent);
-										"
+										style="display: block; border: none; padding: 6px"
 									/>
 								</a>
 							</div>
@@ -612,8 +1136,8 @@
 								>
 									<button
 										style="
-											background-color: #535353;
-											background: linear-gradient(#535353, #535353);
+											background-color: #f6f7f717;
+											background: linear-gradient(#f6f7f717, #f6f7f717);
 											color: #ffffff;
 											padding: 7px 10px;
 											border: none;
@@ -631,8 +1155,8 @@
 								>
 									<button
 										style="
-											background-color: #535353;
-											background: linear-gradient(#535353, #535353);
+											background-color: #f6f7f717;
+											background: linear-gradient(#f6f7f717, #f6f7f717);
 											color: #ffffff;
 											padding: 7px 10px;
 											border: none;
