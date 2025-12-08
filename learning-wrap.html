@@ -25,6 +25,7 @@
 				color: #ffffff !important;
 				text-shadow: 0 0 0 #ffffff !important;
 			}
+
 			a,
 			button {
 				text-decoration: none;
@@ -32,6 +33,7 @@
 			}
 		</style>
 	</head>
+
 	<body
 		style="
 			width: 100%;
@@ -120,7 +122,7 @@
 								"
 							>
 								<a
-									href="{{course_redirect_url}}"
+									href="https://www.milesmasterclass.com"
 									target="_blank"
 									style="
 										background: linear-gradient(#101010, #101010);
@@ -129,7 +131,7 @@
 									"
 								>
 									<img
-										src="{{ course_thumbnail }}"
+										src="https://d1pp0977rsxmiq.cloudfront.net/static-assests/masterclass-emailers/2121454070.png"
 										alt="Miles Masterclass Course Thumbnail"
 										width="100%"
 										style="
@@ -170,7 +172,7 @@
 										text-transform: uppercase;
 									"
 								>
-									Your {{month}} Learning Wrap is here!
+									Your {{current_month}} Learning Wrap is here!
 								</p>
 								<p
 									style="
@@ -201,8 +203,7 @@
 										font: normal 14px / 18px Arial;
 									"
 								>
-									1. Masterclasses Started: [insert no of courses launched that
-									month]
+									1. Masterclasses Started: {{masterclass_courses_completed}}
 								</p>
 								<p
 									style="
@@ -212,8 +213,7 @@
 										font: normal 14px / 18px Arial;
 									"
 								>
-									2. Podcasts Started: [insert no of courses launched that
-									month]
+									2. Podcasts Started: {{podcast_courses_completed}}
 								</p>
 								<p
 									style="
@@ -223,7 +223,7 @@
 										font: normal 14px / 18px Arial;
 									"
 								>
-									3. Reels Started: [insert no of courses launched that month]
+									3. Reels Started: {{nano_courses_completed}}
 								</p>
 								<p
 									style="
@@ -233,8 +233,7 @@
 										font: normal 14px / 18px Arial;
 									"
 								>
-									4. CPE Credits Earned: [insert no of credits earned that
-									month]
+									4. CPE Credits Earned: {{total_cpe_credits}}
 								</p>
 								<p
 									style="
@@ -244,8 +243,7 @@
 										font: normal 14px / 18px Arial;
 									"
 								>
-									5. Total Minutes Learned: [insert total minutes learned
-									masterclass+podcast+reels]
+									5. Total Minutes Learned: {{learning_in_minutes}}
 								</p>
 								<p
 									style="
@@ -255,7 +253,7 @@
 										font: normal 14px / 18px Arial;
 									"
 								>
-									6. CAIRA Progress: [insert %]
+									6. CAIRA Progress: {{caira_progress}}%
 								</p>
 								<p
 									style="
@@ -394,6 +392,17 @@
 									"
 								>
 									{{chapter1.title}}
+								</p>
+
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 14px Arial;
+									"
+								>
+									By {{chapter1.instructor_name}}
 								</p>
 								<p
 									style="
@@ -560,6 +569,16 @@
 								<p
 									style="
 										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 14px Arial;
+									"
+								>
+									By {{chapter2.instructor_name}}
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
 										color: #b2b2b2;
 										font-family: Open Sans, sans-serif;
 										font: normal 14px / 18px Arial;
@@ -650,47 +669,231 @@
 					</td>
 				</tr>
 				<tr>
-					<td style="padding: 0 24px" align="center">
-						<div
+					<td
+						style="
+							background: linear-gradient(#101010, #101010);
+							text-align: center;
+							background-color: #101010;
+							padding: 0 24px;
+						"
+					>
+						<table
+							role="presentation"
+							cellpadding="0"
+							cellspacing="0"
+							border="0"
+							width="100%"
+							align="center"
 							style="
+								margin: 0 auto;
+								border-collapse: separate;
 								background: linear-gradient(#101010, #101010);
 								background-color: #101010;
-								color: #eaeaea;
 							"
 						>
-							<div
-								style="
-									background: linear-gradient(#101010, #101010);
-									background-color: #101010;
-									color: #ffffff;
-								"
-							>
-								<a
-									href="{{course_redirect_url}}"
-									target="_blank"
-									style="
-										background: linear-gradient(#101010, #101010);
-										background-color: #101010;
-										color: #ffffff;
-									"
-								>
-									<img
-										src="{{ chapter3.image }}"
-										alt="Miles Masterclass Course Thumbnail"
-										width="100%"
+							<tr>
+								<td align="center" style="width: 120px">
+									<div
 										style="
-											display: block;
-											border: none;
 											background: linear-gradient(#101010, #101010);
 											background-color: #101010;
-											color: #ffffff;
-											border-radius: 8px;
-											overflow: hidden;
+											color: #eaeaea;
 										"
-									/>
-								</a>
-							</div>
-						</div>
+									>
+										<div
+											style="
+												background: linear-gradient(#101010, #101010);
+												background-color: #101010;
+												color: #ffffff;
+											"
+										>
+											<a
+												href="{{ course1.url }}"
+												target="_blank"
+												style="
+													background: linear-gradient(#101010, #101010);
+													background-color: #101010;
+													color: #ffffff;
+												"
+											>
+												<img
+													src="{{ course1.image }}"
+													alt="{{ course1.title }}"
+													width="100%"
+													style="
+														display: block;
+														border: none;
+														background: linear-gradient(#101010, #101010);
+														background-color: #101010;
+														color: #ffffff;
+													"
+												/>
+											</a>
+										</div>
+									</div>
+								</td>
+								<td align="center" style="width: 120px">
+									<div
+										style="
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #eaeaea;
+										"
+									>
+										<div
+											style="
+												background: linear-gradient(#101010, #101010);
+												background-color: #101010;
+												color: #ffffff;
+											"
+										>
+											<a
+												href="{{ course1.url }}"
+												target="_blank"
+												style="
+													background: linear-gradient(#101010, #101010);
+													background-color: #101010;
+													color: #ffffff;
+												"
+											>
+												<img
+													src="{{ course1.image }}"
+													alt="{{ course1.title }}"
+													width="100%"
+													style="
+														display: block;
+														border: none;
+														background: linear-gradient(#101010, #101010);
+														background-color: #101010;
+														color: #ffffff;
+													"
+												/>
+											</a>
+										</div>
+									</div>
+								</td>
+								<td align="center" style="width: 120px">
+									<div
+										style="
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #eaeaea;
+										"
+									>
+										<div
+											style="
+												background: linear-gradient(#101010, #101010);
+												background-color: #101010;
+												color: #ffffff;
+											"
+										>
+											<a
+												href="{{ course1.url }}"
+												target="_blank"
+												style="
+													background: linear-gradient(#101010, #101010);
+													background-color: #101010;
+													color: #ffffff;
+												"
+											>
+												<img
+													src="{{ course1.image }}"
+													alt="{{ course1.title }}"
+													width="100%"
+													style="
+														display: block;
+														border: none;
+														background: linear-gradient(#101010, #101010);
+														background-color: #101010;
+														color: #ffffff;
+													"
+												/>
+											</a>
+										</div>
+									</div>
+								</td>
+								<td align="center" style="width: 120px">
+									<div
+										style="
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #eaeaea;
+										"
+									>
+										<div
+											style="
+												background: linear-gradient(#101010, #101010);
+												background-color: #101010;
+												color: #ffffff;
+											"
+										>
+											<a
+												href="{{ course1.url }}"
+												target="_blank"
+												style="
+													background: linear-gradient(#101010, #101010);
+													background-color: #101010;
+													color: #ffffff;
+												"
+											>
+												<img
+													src="{{ course1.image }}"
+													alt="{{ course1.title }}"
+													width="100%"
+													style="
+														display: block;
+														border: none;
+														background: linear-gradient(#101010, #101010);
+														background-color: #101010;
+														color: #ffffff;
+													"
+												/>
+											</a>
+										</div>
+									</div>
+								</td>
+								<td align="center" style="width: 120px">
+									<div
+										style="
+											background: linear-gradient(#101010, #101010);
+											background-color: #101010;
+											color: #eaeaea;
+										"
+									>
+										<div
+											style="
+												background: linear-gradient(#101010, #101010);
+												background-color: #101010;
+												color: #ffffff;
+											"
+										>
+											<a
+												href="{{ course1.url }}"
+												target="_blank"
+												style="
+													background: linear-gradient(#101010, #101010);
+													background-color: #101010;
+													color: #ffffff;
+												"
+											>
+												<img
+													src="{{ course1.image }}"
+													alt="{{ course1.title }}"
+													width="100%"
+													style="
+														display: block;
+														border: none;
+														background: linear-gradient(#101010, #101010);
+														background-color: #101010;
+														color: #ffffff;
+													"
+												/>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
 					</td>
 				</tr>
 				<tr>
@@ -718,6 +921,16 @@
 									"
 								>
 									{{chapter3.title}}
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 14px Arial;
+									"
+								>
+									By {{chapter3.instructor_name}}
 								</p>
 								<p
 									style="

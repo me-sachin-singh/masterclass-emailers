@@ -62,7 +62,7 @@
 							style="
 								background: linear-gradient(#101010, #101010);
 								background-color: #101010;
-								color: #ffffff;
+								color: #eaeaea;
 							"
 						>
 							<div
@@ -102,9 +102,8 @@
 				<!-- ============== HEADER END ============== -->
 
 				<!-- ============== BODY START ============== -->
-
 				<tr>
-					<td style="padding: 18px 10px 16px" align="center">
+					<td style="padding: 0 0 32px">
 						<div
 							style="
 								background: linear-gradient(#101010, #101010);
@@ -117,22 +116,19 @@
 									background: linear-gradient(#101010, #101010);
 									background-color: #101010;
 									color: #ffffff;
-									width: 100%;
 								"
 							>
 								<a
-									href="https://www.milesmasterclass.com/"
-									target="_blank"
+									href="#"
 									style="
 										background: linear-gradient(#101010, #101010);
 										background-color: #101010;
 										color: #ffffff;
-										width: 100%;
 									"
 								>
 									<img
-										src="https://d1pp0977rsxmiq.cloudfront.net/static-assests/masterclass-emailers/caira-emailer.png"
-										alt="Miles Masterclass Subscription"
+										src="https://d1pp0977rsxmiq.cloudfront.net/static-assests/masterclass-emailers/2121454070.png"
+										alt=" Welcome to Miles Masterclass"
 										width="100%"
 										style="
 											display: block;
@@ -171,19 +167,41 @@
 										font-family: Open Sans, sans-serif;
 									"
 								>
-									YOU’VE EARNED IT. NOW CLAIM IT TO SHOW OFF ON LINKEDIN!
+									KICKSTART YOUR MILES MASTERCLASS EXPERIENCE
+								</p>
+								<p
+									style="
+										margin: 24px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: bold 14px / 18px Arial;
+									"
+								>
+									Welcome aboard!
 								</p>
 								<p
 									style="
 										margin: 10px 0 0;
 										color: #ffffff;
 										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									Welcome to Miles Masterclass! You're all set to explore
+									cinematic, AI-first learning designed exclusively for
+									accounting professionals with a complimentary course reserved
+									for {{company_name}} employees.
+								</p>
+
+								<p
+									style="
+										margin: 24px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
 										font: bold 14px / 18px Arial;
 									"
 								>
-									Congratulations on successfully completing the CAIRA Level 1
-									Learning Path!You’ve earned your CAIRA Digital Badge — now
-									it’s time to make it official.
+									Where to Begin
 								</p>
 								<p
 									style="
@@ -193,16 +211,128 @@
 										font: normal 14px / 18px Arial;
 									"
 								>
-									Congratulations on successfully completing the CAIRA Level 1
-									Learning Path!You’ve earned your CAIRA Digital Badge — now
-									it’s time to make it official.Subscribe to Miles Masterclass
-									and flex your AI Readiness to the world by proudly displaying
-									your verified CAIRA badge on LinkedIn.
+									To start learning, access the complimentary course for
+									{{company_name}} employees:
 								</p>
+
+								<p
+									style="
+										margin: 24px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: bold 14px / 18px Arial;
+									"
+								>
+									Option 1: Find it on the Homepage
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									After signing up:
+								</p>
+								<ul
+									style="
+										margin: 10px 0 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									<li>Scroll down the homepage</li>
+									<li>
+										Look for the section titled
+										<b>“Complimentary Course for {{company_name}} Employees”</b>
+									</li>
+									<li>Click on the course listed in this section.</li>
+								</ul>
+
+								<p
+									style="
+										margin: 24px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: bold 14px / 18px Arial;
+									"
+								>
+									Option 2: Access Directly
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									You can open the course/s instantly using this link:
+								</p>
+								{% for url in all_complementary_course_urls %}
+
+								<a
+									href="{{url}}"
+									target="_blank"
+									style="
+										margin: 10px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									{{title}}
+								</a>
+								{% endfor %}
+
+								<p
+									style="
+										margin: 24px 0 0;
+										color: #ffffff;
+										font-family: Open Sans, sans-serif;
+										font: bold 14px / 18px Arial;
+									"
+								>
+									Important Reminder
+								</p>
+								<p
+									style="
+										margin: 10px 0 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									This course is fully complimentary under your organization’s
+									access. You are welcome to explore other courses on the
+									platform; however, please note:
+								</p>
+								<ul
+									style="
+										margin: 10px 0 0;
+										color: #b2b2b2;
+										font-family: Open Sans, sans-serif;
+										font: normal 14px / 18px Arial;
+									"
+								>
+									<li>
+										You can download a
+										<b> NASBA-approved CPE certificate</b> only for the
+										complimentary course
+									</li>
+									<li>
+										For other courses, CPE certificate downloads will require a
+										subscription, as they are
+										<b>not included in your organization’s access.</b>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</td>
 				</tr>
+
 				<tr>
 					<td style="padding: 0 24px 32px">
 						<div
@@ -220,7 +350,7 @@
 								"
 							>
 								<a
-									href="https://www.milesmasterclass.com/accounting/plan"
+									href="{{1st_complementary_course_url}}"
 									target="_blank"
 									style="
 										background: linear-gradient(#101010, #101010);
@@ -233,7 +363,7 @@
 											cursor: pointer;
 											background: linear-gradient(#0a74de, #0a74de);
 											background-color: #0a74de;
-											color: #ffffff;
+											color: #e0e0e0;
 											font-family: Open Sans, sans-serif;
 											font: normal 16px / 20px Arial;
 											border-radius: 999px;
@@ -241,15 +371,13 @@
 											border: 0;
 										"
 									>
-										Subscribe Now - $999/year
+										Explore Complementary Courses
 									</button>
 								</a>
 							</div>
 						</div>
 					</td>
 				</tr>
-
-				<!-- ============== BODY END ============== -->
 
 				<!-- ============== FOOTER START ============== -->
 
@@ -317,7 +445,7 @@
 								"
 							>
 								<a
-									href="https://apps.apple.com/in/app/miles-masterclass-ai-cpe/id6736642042"
+									href="https://apps.apple.com/in/accounting/miles-masterclass/id6736642042"
 									target="_blank"
 									style="text-decoration: none; text-align: center"
 								>
